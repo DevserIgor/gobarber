@@ -145,7 +145,6 @@ class AppointmentController {
     }
 
     const dateWithSub = subHours(appointment.date, 2);
-    console.log(dateWithSub);
 
     if (isBefore(dateWithSub, new Date())) {
       return res.status(401).json({
